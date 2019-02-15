@@ -1,0 +1,52 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;   
+}
+
+@font-face {
+    font-family: Orbitron;
+    src: url(./Orbitron-Regular.ttf);
+}
+
+body {
+    background: url("./pattern.png");
+}
+
+.main {
+    background: -webkit-linear-gradient(top, #27b0f6 0%, #0aa1ed 100%);
+    width: 600px;
+    height: 195px;
+    margin: 150px auto;
+    position: relative;
+    padding: 30px;
+    box-shadow: 6px 6px 6px 2px #bbb;
+}
+
+.main .badge {
+    background: #e66357;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 5px 10px;
+    text-align: center;
+    width: 96px;
+    position: absolute;
+    left: 40%;
+    top: -15px;
+
+}
+
+.main .clock {
+    background: #ebebeb;
+    text-align: center;
+    font-size: 55px;
+    height: 100%;
+    padding-top: 5px;
+    font-family: Orbitron;
+    border-radius: 5px;
+}
+
+.main .clock .days {
+    font-family: Orbitron;
+    font-size: 45px;
+}

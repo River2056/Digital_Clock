@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.river.project.digital.clock"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>Digital Clock</name>
+
+  <description>
+      Digital Clock build myself with some help, made some adjustments and configurations myself
+  </description>
+
+  <author href="https://www.facebook.com/kevin.tung.39" email="chen0625tung@gmail.com">
+      River2056
+  </author>
+
+</widget>
