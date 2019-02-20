@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: Orbitron;
-    src: url(./Orbitron-Regular.ttf);
+    src: url(./Orbitron/Orbitron-Regular.ttf);
 }
 
 body {
-    background: url("./pattern.png");
+    background: #292c34;
 }
 
 .main {
@@ -20,7 +20,7 @@ body {
     margin: 150px auto;
     position: relative;
     padding: 30px;
-    box-shadow: 6px 6px 6px 2px #bbb;
+    box-shadow: 0px 0px 6px 10px #fcce64;
 }
 
 .main .badge {
@@ -37,7 +37,8 @@ body {
 }
 
 .main .clock {
-    background: #ebebeb;
+    background: #292c34;
+    color: #fff;
     text-align: center;
     font-size: 55px;
     height: 100%;
@@ -49,4 +50,12 @@ body {
 .main .clock .days {
     font-family: Orbitron;
     font-size: 45px;
+}
+
+.main .count {
+    width: 800px;
+    height: 35px;
+    margin-top: 45px;
+    font-size: 40px;
+    margin-left: -120px;
 }
