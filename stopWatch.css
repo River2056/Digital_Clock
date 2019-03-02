@@ -9,6 +9,12 @@
     src: url(./Orbitron/Orbitron-Regular.ttf);
 }
 
+@font-face {
+    font-family: Orbitron;
+    font-weight: bold;
+    src: url("./Orbitron/Orbitron-Bold.ttf");
+}
+
 body {
     background: url("./1000.jpg");
     background-size: cover;
@@ -66,9 +72,44 @@ body {
 
 .main .count {
     background: none;
-    width: 800px;
+    width: 540px;
     height: 35px;
     margin-top: 45px;
     font-size: 40px;
-    margin-left: -120px;
+    position: relative;
+}
+
+.main .count .btn {
+    background: -webkit-linear-gradient(top, #27b0f6 0%, #0aa1ed 100%);
+    width: 90px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.main .count .btn:hover {
+    cursor: pointer;
+    width: 110px;
+    background: #fff;
+    color: #27b0f6;
+    border: 4px solid #27b0f6;
+    line-height: 45px;
+}
+
+.main .count .reset {
+    position: absolute;
+    top: 6px;
+    right: 233px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
 }
