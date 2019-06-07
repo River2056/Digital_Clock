@@ -12,6 +12,7 @@ $(function() {
         var secs = fullDate.getSeconds();
         var day = fullDate.getDay();
         var date = fullDate.getDate();
+        var month = fullDate.getMonth().toLocaleString('en-us', { month: 'long' });
         var diff = fullDate.getTime() - pass.getTime();
         var daysPass = diff / 1000 / 60 / 60 / 24;
         daysPass = daysPass.toFixed(5);
@@ -49,13 +50,20 @@ $(function() {
                 day = "Sat";
                 break;
         }
+
+        const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "June",
+            "July", "Aug", "Sep", "Oct", "Nov", "Dec"
+        ];
+
+        month = monthNames[month];
+
         $("#hours").html(`${hours}`);
         $("#minutes").html(` : ${mins}`);
         $("#seconds").html(` : ${secs}`);
         $("#day").html(`${day}`);
-        $("#date").html(` - ${date}`);
+        $("#date").html(` - ${date} - ${month}`);
         $(".count").html(`days passed: ${daysPass}`);
-        $("#title").html(`${hours} : ${mins} : ${secs}  ${day} - ${date}`);
+        $("#title").html(`${hours} : ${mins} : ${secs}  ${day} - ${date} - ${month}`);
     }
     setInterval(clock, 100);
 });
